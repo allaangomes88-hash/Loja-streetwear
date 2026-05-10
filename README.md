@@ -6,7 +6,7 @@ Loja streetwear fictícia simples criada pra praticar JS puro, manipulação do 
 
 O projeto simula uma API real: o arquivo `db.json` funciona como banco de dados com os produtos, e o `api.js` expõe funções para buscar esses dados, imitando o que seria uma requisição a um servidor.
 
-O `script.js` consome essa "API" e renderiza os produtos dinamicamente no DOM, sem nenhum dado fixo no HTML.
+O `script.js` consome essa "API" (npm start na terminal git bash) e renderiza os produtos dinamicamente no DOM, sem nenhum dado fixo no HTML.
 
 ## Desenvolvimento
 
