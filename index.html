@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DRIP — Streetwear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="scripts/script.js" type="module" defer></script>
+</head>
+<body>
+
+  <!-- ANÚNCIO TOPO -->
+  <div class="anuncio">
+    FRETE GRÁTIS ACIMA DE R$399,90 — ENTREGA EM TODO O BRASIL
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div></div>
+    <span class="header__logo">DRIP</span>
+    <div class="header__acoes">
+      <button class="header__carrinho-btn" id="btn-carrinho">
+        BAG
+        <span class="header__carrinho-count" id="carrinho-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__esquerda">
+        <p class="hero__temporada">temporada 2025 — drop 01</p>
+        <h1 class="hero__titulo">
+          NEW<br>
+          <span>collection</span>
+          DROP
+        </h1>
+      </div>
+      <div class="hero__direita">
+        <p class="hero__destaque-label">destaque da semana</p>
+        <h2 class="hero__destaque-nome">Jaqueta Coach<br>Reversível</h2>
+        <p class="hero__destaque-desc">Um lado preto liso, outro laranja com patch bordado. A peça statement da temporada.</p>
+        <p class="hero__destaque-preco">R$ 459,90</p>
+        <button class="hero__destaque-btn" id="btn-ver-destaque" >Ver produto</button>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker">
+      <div class="ticker__inner">
+        <span class="ticker__item">STREETWEAR NACIONAL</span>
+        <span class="ticker__sep">—</span>
+        <span class="ticker__item">DROP 01</span>
+        <span class="ticker__sep">—</span>
+        <span class="ticker__item">ENVIO EM 24H</span>
+        <span class="ticker__sep">—</span>
+        <span class="ticker__item">QUALIDADE PREMIUM</span>
+        <span class="ticker__sep">—</span>
+        <span class="ticker__item">PEÇAS LIMITADAS</span>
+        <span class="ticker__sep">—</span>
+        <span class="ticker__item">STREETWEAR NACIONAL</span>
+        <span class="ticker__sep">—</span>
+        <span class="ticker__item">DROP 01</span>
+        <span class="ticker__sep">—</span>
+        <span class="ticker__item">ENVIO EM 24H</span>
+        <span class="ticker__sep">—</span>
+        <span class="ticker__item">QUALIDADE PREMIUM</span>
+        <span class="ticker__sep">—</span>
+        <span class="ticker__item">PEÇAS LIMITADAS</span>
+        <span class="ticker__sep">—</span>
+      </div>
+    </div>
+
+    <!-- PRODUTOS -->
+    <section class="secao-produtos">
+      <div class="secao-produtos__header">
+        <h2 class="secao-produtos__titulo">PRODUTOS</h2>
+        <span class="secao-produtos__count" id="produtos-count">0 peças</span>
+      </div>
+
+      <!-- FILTROS -->
+      <div class="filtros" id="filtros">
+        <button class="filtro-btn filtro-btn--ativo" data-categoria="todos">Tudo</button>
+        <button class="filtro-btn" data-categoria="camisetas">Camisetas</button>
+        <button class="filtro-btn" data-categoria="calcas">Calças</button>
+        <button class="filtro-btn" data-categoria="moletons">Moletons</button>
+        <button class="filtro-btn" data-categoria="jaquetas">Jaquetas</button>
+        <button class="filtro-btn" data-categoria="bags">Bags</button>
+        <button class="filtro-btn" data-categoria="acessorios">Acessórios</button>
+      </div>
+
+      <!-- GRID -->
+      <ul class="produtos__grid" id="lista-produtos"></ul>
+      <div class="produtos__vazio" id="produtos-vazio" hidden>
+        Nenhum produto encontrado nessa categoria.
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 DRIP — Projeto fictício sem fins comerciais.</p>
+    <span class="footer__logo">DRIP</span>
+  </footer>
+
+  <!-- CARRINHO SIDEBAR -->
+  <aside class="carrinho" id="carrinho-sidebar">
+    <div class="carrinho__header">
+      <h2 class="carrinho__titulo">SEU BAG</h2>
+      <button class="carrinho__fechar" id="btn-fechar-carrinho">✕</button>
+    </div>
+    <ul class="carrinho__lista" id="lista-carrinho"></ul>
+    <div class="carrinho__vazio" id="carrinho-vazio">
+      <p>Bag vazia.</p>
+    </div>
+    <div class="carrinho__rodape" id="carrinho-rodape" hidden>
+      <div class="carrinho__total">
+        <span>Total</span>
+        <span id="carrinho-total">R$ 0,00</span>
+      </div>
+      <button class="carrinho__finalizar" id="btn-ir-checkout">FINALIZAR COMPRA</button>
+    </div>
+  </aside>
+
+  <!-- CONFIRMAÇÃO -->
+  <div class="confirmacao" id="confirmacao" hidden>
+    <div class="confirmacao__caixa">
+      <p class="confirmacao__label">PEDIDO CONFIRMADO</p>
+      <h2 class="confirmacao__titulo">DRIP</h2>
+      <p class="confirmacao__msg">Seu pedido foi recebido.<br>Em breve você receberá uma confirmação.</p>
+      <div class="confirmacao__separador"></div>
+      <p class="confirmacao__sub">Obrigado por comprar com a gente.</p>
+      <button class="confirmacao__btn" id="btn-fechar-confirmacao">CONTINUAR COMPRANDO</button>
+    </div>
+  </div>
+
+  <!-- OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+</body>
+</html>

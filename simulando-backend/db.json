@@ -1,0 +1,332 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Camiseta Oversized Drop",
+      "categoria": "camisetas",
+      "preco": 129.9,
+      "tamanhos": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ],
+      "cor": "Preto",
+      "descricao": "Camiseta oversized com fit relaxado, 100% algodão pesado 300g. Gola redonda reforçada.",
+      "estoque": 15
+    },
+    {
+      "id": "2",
+      "nome": "Camiseta Graphic Tee Vol.3",
+      "categoria": "camisetas",
+      "preco": 149.9,
+      "tamanhos": [
+        "P",
+        "M",
+        "G"
+      ],
+      "cor": "Off-white",
+      "descricao": "Camiseta com estampa gráfica exclusiva, silk frontal e traseiro. Fit oversized.",
+      "estoque": 8
+    },
+    {
+      "id": "3",
+      "nome": "Calça Cargo Wide",
+      "categoria": "calcas",
+      "preco": 289.9,
+      "tamanhos": [
+        "36",
+        "38",
+        "40",
+        "42"
+      ],
+      "cor": "Caqui",
+      "descricao": "Calça cargo com 6 bolsos, fit wide leg. Tecido sarja resistente com caimento perfeito.",
+      "estoque": 10
+    },
+    {
+      "id": "4",
+      "nome": "Calça Baggy Denim",
+      "categoria": "calcas",
+      "preco": 319.9,
+      "tamanhos": [
+        "36",
+        "38",
+        "40"
+      ],
+      "cor": "Azul delavê",
+      "descricao": "Jeans baggy com lavagem delavê, cinco bolsos e barra larga. O básico do streetwear.",
+      "estoque": 6
+    },
+    {
+      "id": "5",
+      "nome": "Moletom Hoodie Essential",
+      "categoria": "moletons",
+      "preco": 249.9,
+      "tamanhos": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ],
+      "cor": "Cinza mescla",
+      "descricao": "Hoodie com bolso canguru, forro interno felpudo. Fit oversized com caimento ideal.",
+      "estoque": 12
+    },
+    {
+      "id": "6",
+      "nome": "Moletom Crewneck Logo",
+      "categoria": "moletons",
+      "preco": 219.9,
+      "tamanhos": [
+        "M",
+        "G",
+        "GG"
+      ],
+      "cor": "Preto",
+      "descricao": "Moletom gola redonda com bordado frontal. Algodão 380g com acabamento premium.",
+      "estoque": 9
+    },
+    {
+      "id": "7",
+      "nome": "Bucket Hat Cord",
+      "categoria": "acessorios",
+      "preco": 89.9,
+      "tamanhos": [
+        "Único"
+      ],
+      "cor": "Bege",
+      "descricao": "Bucket hat em tecido cotelê, aba larga e fita interna ajustável. Essencial no look.",
+      "estoque": 20
+    },
+    {
+      "id": "8",
+      "nome": "Shoulder Bag Tática",
+      "categoria": "bags",
+      "preco": 159.9,
+      "tamanhos": [
+        "Único"
+      ],
+      "cor": "Preto",
+      "descricao": "Shoulder bag com múltiplos compartimentos, alça ajustável e fecho YKK. 4L de capacidade.",
+      "estoque": 14
+    },
+    {
+      "id": "9",
+      "nome": "Tote Bag Canvas",
+      "categoria": "bags",
+      "preco": 79.9,
+      "tamanhos": [
+        "Único"
+      ],
+      "cor": "Natural",
+      "descricao": "Tote bag em lona canvas 400g, alças reforçadas e estampa serigrafada. 15L de capacidade.",
+      "estoque": 25
+    },
+    {
+      "id": "10",
+      "nome": "Corrente Chunky",
+      "categoria": "acessorios",
+      "preco": 69.9,
+      "tamanhos": [
+        "Único"
+      ],
+      "cor": "Prata",
+      "descricao": "Corrente chunky em aço inoxidável, 60cm com fecho mosquetão. Resistente e estilosa.",
+      "estoque": 30
+    },
+    {
+      "id": "11",
+      "nome": "Jaqueta Coach Reversível",
+      "categoria": "jaquetas",
+      "preco": 459.9,
+      "tamanhos": [
+        "P",
+        "M",
+        "G"
+      ],
+      "cor": "Preto/Laranja",
+      "descricao": "Jaqueta coach reversível, um lado preto liso e outro laranja com patch bordado. Peça statement.",
+      "estoque": 5
+    },
+    {
+      "id": "12",
+      "nome": "Jaqueta Corta-Vento Ripstop",
+      "categoria": "jaquetas",
+      "preco": 389.9,
+      "tamanhos": [
+        "M",
+        "G",
+        "GG"
+      ],
+      "cor": "Verde militar",
+      "descricao": "Corta-vento em nylon ripstop, capuz embutido e bolsos com zíper. Leve e impermeável.",
+      "estoque": 7
+    }
+  ],
+  "carrinho": [
+    {
+      "id": "7_phc-_r0XI",
+      "nome": "Camiseta Oversized Drop",
+      "categoria": "camisetas",
+      "preco": 129.9,
+      "tamanhos": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ],
+      "cor": "Preto",
+      "descricao": "Camiseta oversized com fit relaxado, 100% algodão pesado 300g. Gola redonda reforçada.",
+      "estoque": 15
+    },
+    {
+      "id": "WLaezir7FL8",
+      "nome": "Calça Cargo Wide",
+      "categoria": "calcas",
+      "preco": 289.9,
+      "tamanhos": [
+        "36",
+        "38",
+        "40",
+        "42"
+      ],
+      "cor": "Caqui",
+      "descricao": "Calça cargo com 6 bolsos, fit wide leg. Tecido sarja resistente com caimento perfeito.",
+      "estoque": 10
+    },
+    {
+      "id": "99DtAhGwopA",
+      "nome": "Camiseta Graphic Tee Vol.3",
+      "categoria": "camisetas",
+      "preco": 149.9,
+      "tamanhos": [
+        "P",
+        "M",
+        "G"
+      ],
+      "cor": "Off-white",
+      "descricao": "Camiseta com estampa gráfica exclusiva, silk frontal e traseiro. Fit oversized.",
+      "estoque": 8
+    },
+    {
+      "id": "o8x0pkXp2Q8",
+      "nome": "Calça Baggy Denim",
+      "categoria": "calcas",
+      "preco": 319.9,
+      "tamanhos": [
+        "36",
+        "38",
+        "40"
+      ],
+      "cor": "Azul delavê",
+      "descricao": "Jeans baggy com lavagem delavê, cinco bolsos e barra larga. O básico do streetwear.",
+      "estoque": 6
+    },
+    {
+      "id": "L5yeOxvZxVo",
+      "nome": "Calça Cargo Wide",
+      "categoria": "calcas",
+      "preco": 289.9,
+      "tamanhos": [
+        "36",
+        "38",
+        "40",
+        "42"
+      ],
+      "cor": "Caqui",
+      "descricao": "Calça cargo com 6 bolsos, fit wide leg. Tecido sarja resistente com caimento perfeito.",
+      "estoque": 10
+    },
+    {
+      "id": "4OB6wexLnEM",
+      "nome": "Calça Cargo Wide",
+      "categoria": "calcas",
+      "preco": 289.9,
+      "tamanhos": [
+        "36",
+        "38",
+        "40",
+        "42"
+      ],
+      "cor": "Caqui",
+      "descricao": "Calça cargo com 6 bolsos, fit wide leg. Tecido sarja resistente com caimento perfeito.",
+      "estoque": 10
+    },
+    {
+      "id": "7ZJAMeNKiwk",
+      "nome": "Calça Cargo Wide",
+      "categoria": "calcas",
+      "preco": 289.9,
+      "tamanhos": [
+        "36",
+        "38",
+        "40",
+        "42"
+      ],
+      "cor": "Caqui",
+      "descricao": "Calça cargo com 6 bolsos, fit wide leg. Tecido sarja resistente com caimento perfeito.",
+      "estoque": 10
+    },
+    {
+      "id": "H9w4V48aSjo",
+      "nome": "Camiseta Graphic Tee Vol.3",
+      "categoria": "camisetas",
+      "preco": 149.9,
+      "tamanhos": [
+        "P",
+        "M",
+        "G"
+      ],
+      "cor": "Off-white",
+      "descricao": "Camiseta com estampa gráfica exclusiva, silk frontal e traseiro. Fit oversized.",
+      "estoque": 8
+    },
+    {
+      "id": "A3qoUL08iKw",
+      "nome": "Calça Cargo Wide",
+      "categoria": "calcas",
+      "preco": 289.9,
+      "tamanhos": [
+        "36",
+        "38",
+        "40",
+        "42"
+      ],
+      "cor": "Caqui",
+      "descricao": "Calça cargo com 6 bolsos, fit wide leg. Tecido sarja resistente com caimento perfeito.",
+      "estoque": 10
+    },
+    {
+      "id": "6eGl4NuC7dU",
+      "nome": "Calça Cargo Wide",
+      "categoria": "calcas",
+      "preco": 289.9,
+      "tamanhos": [
+        "36",
+        "38",
+        "40",
+        "42"
+      ],
+      "cor": "Caqui",
+      "descricao": "Calça cargo com 6 bolsos, fit wide leg. Tecido sarja resistente com caimento perfeito.",
+      "estoque": 10
+    },
+    {
+      "id": "2DjyT6y9KrQ",
+      "nome": "Calça Cargo Wide",
+      "categoria": "calcas",
+      "preco": 289.9,
+      "tamanhos": [
+        "36",
+        "38",
+        "40",
+        "42"
+      ],
+      "cor": "Caqui",
+      "descricao": "Calça cargo com 6 bolsos, fit wide leg. Tecido sarja resistente com caimento perfeito.",
+      "estoque": 10
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

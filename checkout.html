@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DRIP — Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/checkout.css" />
+  <script src="scripts/checkout.js" type="module" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="index.html" class="header__voltar">← VOLTAR</a>
+    <span class="header__logo">DRIP</span>
+    <span class="header__step">CHECKOUT</span>
+  </header>
+
+  <main class="checkout">
+
+    <!-- COLUNA ESQUERDA -->
+    <div class="checkout__esquerda">
+
+      <!-- ENDEREÇO -->
+      <section class="checkout__secao">
+        <h2 class="checkout__secao-titulo">01 — ENTREGA</h2>
+
+        <div class="checkout__grupo">
+          <label class="checkout__label" for="nome">Nome completo</label>
+          <input class="checkout__input" type="text" id="nome" placeholder="Seu nome" />
+          <span hidden class="red">Campo vazio!</span>
+        </div>
+
+        <div class="checkout__linha">
+          <div class="checkout__grupo">
+            <label class="checkout__label" for="cep">CEP</label>
+            <input class="checkout__input" type="text" id="cep" placeholder="00000-000" maxlength="9" />
+            <span hidden class="red">Campo vazio!</span>
+          </div>
+          <div class="checkout__grupo checkout__grupo--grande">
+            <label class="checkout__label" for="cidade">Cidade</label>
+            <input class="checkout__input" type="text" id="cidade" placeholder="Sua cidade" />
+            <span hidden class="red">Campo vazio!</span>
+          </div>
+        </div>
+
+        <div class="checkout__grupo">
+          <label class="checkout__label" for="endereco">Endereço</label>
+          <input class="checkout__input" type="text" id="endereco" placeholder="Rua, número, complemento" />
+         <span hidden class="red">Campo vazio!</span>
+        </div>
+
+        <div class="checkout__linha">
+          <div class="checkout__grupo">
+            <label class="checkout__label" for="estado">Estado</label>
+            <select class="checkout__input checkout__select" id="estado">
+              <option value="">UF</option>
+              <option>SP</option><option>RJ</option><option>MG</option>
+              <option>RS</option><option>PR</option><option>SC</option>
+              <option>BA</option><option>GO</option><option>DF</option>
+              <option>PE</option><option>CE</option><option>AM</option>
+            </select>
+          </div>
+          <div class="checkout__grupo checkout__grupo--grande">
+            <label class="checkout__label" for="email">E-mail</label>
+            <input class="checkout__input" type="email" id="email" placeholder="seu@email.com" />
+            <span hidden class="red">Campo vazio!</span>
+            <span hidden class="red" id="email-invalido">Email inválido!</span>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- PAGAMENTO -->
+      <section class="checkout__secao">
+        <h2 class="checkout__secao-titulo">02 — PAGAMENTO</h2>
+
+        <div class="checkout__metodos">
+          <label class="checkout__metodo">
+            <input type="radio" name="pagamento" value="pix" checked />
+            <div class="checkout__metodo-caixa">
+              <span class="checkout__metodo-icone">◈</span>
+              <div>
+                <p class="checkout__metodo-nome">PIX</p>
+                <p class="checkout__metodo-desc">Aprovação imediata</p>
+              </div>
+            </div>
+          </label>
+
+          <label class="checkout__metodo">
+            <input type="radio" name="pagamento" value="cartao" />
+            <div class="checkout__metodo-caixa">
+              <span class="checkout__metodo-icone">▣</span>
+              <div>
+                <p class="checkout__metodo-nome">CARTÃO</p>
+                <p class="checkout__metodo-desc">Crédito ou débito</p>
+              </div>
+            </div>
+          </label>
+
+          <label class="checkout__metodo">
+            <input type="radio" name="pagamento" value="boleto" />
+            <div class="checkout__metodo-caixa">
+              <span class="checkout__metodo-icone">≡</span>
+              <div>
+                <p class="checkout__metodo-nome">BOLETO</p>
+                <p class="checkout__metodo-desc">Vence em 3 dias úteis</p>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <!-- CAMPOS CARTÃO -->
+        <div class="checkout__cartao" id="campos-cartao" hidden>
+          <div class="checkout__grupo">
+            <label class="checkout__label" for="cartao-numero">Número do cartão</label>
+            <input class="checkout__input" type="text" id="cartao-numero" placeholder="0000 0000 0000 0000" maxlength="19" />
+          </div>
+          <div class="checkout__linha">
+            <div class="checkout__grupo">
+              <label class="checkout__label" for="cartao-validade">Validade</label>
+              <input class="checkout__input" type="text" id="cartao-validade" placeholder="MM/AA" maxlength="5" />
+            </div>
+            <div class="checkout__grupo">
+              <label class="checkout__label" for="cartao-cvv">CVV</label>
+              <input class="checkout__input" type="text" id="cartao-cvv" placeholder="000" maxlength="3" />
+            </div>
+            <div class="checkout__grupo checkout__grupo--grande">
+              <label class="checkout__label" for="cartao-nome">Nome no cartão</label>
+              <input class="checkout__input" type="text" id="cartao-nome" placeholder="COMO NO CARTÃO" />
+            </div>
+          </div>
+          <div class="checkout__grupo">
+            <label class="checkout__label" for="parcelas">Parcelas</label>
+            <select class="checkout__input checkout__select" id="parcelas">
+              <option>1x sem juros</option>
+              <option>2x sem juros</option>
+              <option>3x sem juros</option>
+            </select>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- COLUNA DIREITA — RESUMO -->
+    <aside class="checkout__resumo">
+      <h2 class="checkout__secao-titulo">RESUMO</h2>
+
+      <ul class="checkout__itens" id="checkout-itens">
+        <li class="checkout__item-vazio" hidden>Nenhum item no carrinho.</li>
+      </ul>
+
+      <div class="checkout__resumo-linha">
+        <span>Subtotal</span>
+        <span id="checkout-subtotal">R$ 0,00</span>
+      </div>
+      <div class="checkout__resumo-linha">
+        <span>Frete</span>
+        <span id="checkout-frete">—</span>
+      </div>
+      <div class="checkout__resumo-total">
+        <span>TOTAL</span>
+        <span id="checkout-total">R$ 0,00</span>
+      </div>
+
+      <button class="checkout__btn" id="btn-finalizar">
+        FINALIZAR COMPRA
+      </button>
+
+      <p class="checkout__seguro">🔒 Compra 100% segura e criptografada</p>
+    </aside>
+
+        <!-- CONFIRMAÇÃO DE COMPRA -->
+  <div class="confirmacao" id="confirmacao" hidden>
+      <div class="confirmacao__caixa">
+        <p class="confirmacao__label">PEDIDO CONFIRMADO</p>
+        <h2 class="confirmacao__titulo">DRIP</h2>
+        <p class="confirmacao__msg">Seu pedido foi recebido.<br>Em breve você receberá uma confirmação.</p>
+        <div class="confirmacao__separador"></div>
+        <p class="confirmacao__sub">Obrigado por comprar com a gente.</p>
+        <a class="confirmacao__btn" id="btn-fechar-confirmacao" href="index.html">CONTINUAR COMPRANDO</a>
+      </div>
+  </div>
+
+  </main>
+
+</body>
+</html>
